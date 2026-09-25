@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Light Tap</title>
+  <meta name="description" content="Help for Light Tap on iPhone and Apple Watch. Email ranestormz@gmail.com and a person will answer.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Light Tap">
+  <meta property="og:title" content="Support — Light Tap">
+  <meta property="og:description" content="Help for Light Tap on iPhone and Apple Watch. Email ranestormz@gmail.com and a person will answer.">
+  <meta property="og:url" content="https://jacksliwoski.github.io/light-tap-site/support.html">
+  <meta property="og:image" content="https://jacksliwoski.github.io/light-tap-site/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Support — Light Tap">
+  <meta name="twitter:description" content="Help for Light Tap on iPhone and Apple Watch. Email ranestormz@gmail.com and a person will answer.">
+  <meta name="twitter:image" content="https://jacksliwoski.github.io/light-tap-site/social-card.png">
+  <style>
+/* Light Tap — public site (privacy, support). Self-contained, no external assets.
+   Palette taken from the app's own "Dusk" world: plum mesh, warm gold lights. */
+:root {
+  --plum: #2b1233;
+  --plum-deep: #170a1c;
+  --ember: #4a2028;
+  --ivory: #f7efe4;
+  --ivory-dim: rgba(247, 239, 228, 0.70);
+  --gold: #ffd76a;
+  --gold-deep: #c9973a;
+  --coral: #ff9e77;
+  --card: rgba(0, 0, 0, 0.28);
+  --line: rgba(255, 255, 255, 0.12);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ivory);
+  background: radial-gradient(130% 95% at 50% 12%, #4a2030 0%, var(--plum) 48%, var(--plum-deep) 100%) fixed;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+header.site, footer.site {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 16px;
+}
+header.site { padding-bottom: 20px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+footer.site {
+  display: block; margin-top: 44px; padding-top: 20px;
+  border-top: 1px solid var(--line); color: var(--ivory-dim); font-size: 14px;
+}
+footer.site a { margin-right: 18px; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--ivory); }
+.brand .logo {
+  width: 42px; height: 42px; border-radius: 11px;
+  background: radial-gradient(circle at 38% 34%, #fff6df 0%, var(--gold) 42%, var(--gold-deep) 78%, #7a4a1c 100%);
+  box-shadow: 0 4px 16px rgba(255, 190, 90, 0.35);
+}
+.brand .name { font-weight: 900; font-size: 20px; letter-spacing: 0.4px; }
+.brand .name span { color: var(--gold); }
+nav a { margin-left: 18px; font-weight: 700; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 6px; font-weight: 900; }
+h2 { font-size: 20px; margin: 30px 0 8px; color: var(--gold); font-weight: 900; letter-spacing: 0.3px; }
+h3 { font-size: 16px; margin: 18px 0 6px; font-weight: 800; }
+p, li { color: var(--ivory); font-size: 16px; }
+.muted { color: var(--ivory-dim); }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: 800; color: var(--gold); margin-bottom: 8px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 16px 0; }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 18px 0 8px; }
+.summary .tile { background: rgba(255,255,255,0.06); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.summary .tile b { display: block; font-size: 15px; margin-bottom: 2px; }
+.summary .tile span { font-size: 13px; color: var(--ivory-dim); }
+.cross::before { content: "\2715 "; color: #ff8a80; font-weight: 900; }
+.check::before { content: "\2713 "; color: #8fe3b0; font-weight: 900; }
+table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+.btn {
+  display: inline-block; padding: 14px 26px; border-radius: 999px; font-weight: 900;
+  letter-spacing: 0.6px; font-size: 15px;
+}
+.btn-waiting { background: rgba(255,255,255,0.10); border: 1px solid var(--line); color: var(--ivory-dim); }
+@media (max-width: 520px) {
+  h1 { font-size: 27px; }
+  nav a { margin-left: 12px; font-size: 13px; }
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; }
+  td { border: none; padding: 4px 0; }
+  tbody tr { border-bottom: 1px solid var(--line); padding: 10px 0; }
+  td::before { content: attr(data-l); display: block; color: var(--gold); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.html"><div class="logo"></div><div class="name">Light<span> Tap</span></div></a>
+    <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+  </header>
+
+  <div class="eyebrow">Support</div>
+  <h1>Something not working? Email a person.</h1>
+  <p class="muted">Light Tap is made by one small studio. There is no ticket system and no bot &mdash; write to <a href="mailto:ranestormz@gmail.com">ranestormz@gmail.com</a> and you will get a reply.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0">To help us fix it faster</h3>
+    <p class="muted" style="margin:0">Tell us your device (for example iPhone 13), your iOS or watchOS version, and what you were doing when it happened. A screenshot or screen recording helps more than anything else.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <h3>I can&rsquo;t hear anything</h3>
+  <p>Check three things, in order. Sound has its own switch in Settings inside the app. The physical silent switch on the side of your iPhone also mutes the app, which is deliberate &mdash; a calm app should stay quiet when you have told your phone to be quiet. And if you unplug headphones mid-session the audio pauses rather than jumping to the speaker; leave the app and come back to start it again.</p>
+
+  <h3>I can&rsquo;t feel the taps</h3>
+  <p>Haptics have a switch in Settings, plus three strengths &mdash; tap Light, Medium or Strong and you will feel that strength immediately as you choose it. If you feel nothing at any strength, check Settings &rsaquo; Sounds &amp; Haptics &rsaquo; System Haptics on your iPhone. Haptics are much softer on Apple Watch than on iPhone by design.</p>
+
+  <h3>How do I change worlds?</h3>
+  <p>Three ways, whichever you prefer: swipe left or right anywhere on the home screen, tap one of the four coloured dots, or tap &ldquo;Browse all worlds&rdquo; to see each one full size before choosing.</p>
+
+  <h3>The lights on the home screen disappear when I tap them</h3>
+  <p>That is intentional &mdash; the home screen is a live preview, so you can pop those lights too. They come back after a few seconds, and switching worlds resets them. Nothing is being saved or scored.</p>
+
+  <h3>How do I end a session?</h3>
+  <p>Tap <b>Done</b> in the top-left corner. There is no score, no timer and no way to lose, so you can stop whenever you like.</p>
+
+  <h3>Does it work offline / on Airplane Mode?</h3>
+  <p>Yes, always. The app never makes a network connection.</p>
+
+  <h3>Do you collect any data?</h3>
+  <p>No. Nothing at all leaves your device &mdash; see the <a href="privacy.html">privacy policy</a> for the detail.</p>
+
+  <h3>How do I delete everything the app has stored?</h3>
+  <p>Delete the app. The system removes its settings with it. There is no account and no server-side copy.</p>
+
+  <h3>The text is too small</h3>
+  <p>Settings scales with the system text size (Settings &rsaquo; Display &amp; Brightness &rsaquo; Text Size, or the larger Accessibility sizes). The home screen does not scale yet &mdash; that is on the list for a future update.</p>
+
+  <h2>Requests and bugs</h2>
+  <p>Feature ideas are genuinely welcome, especially about how the app <em>feels</em>. If something is uncomfortable, too fast, too bright or too loud, that is worth an email.</p>
+  <footer class="site">
+    <a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a>
+    <div style="margin-top:8px">&copy; 2026 Sono Studios.</div>
+  </footer>
+</div>
+</body>
+</html>
